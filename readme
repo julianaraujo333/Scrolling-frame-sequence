@@ -44,9 +44,3 @@ O JavaScript gerencia:
 - A sincronização das animações com o scroll da página usando GSAP e ScrollTrigger.
 - A suavização do scroll com Lenis.
 
-## Como Utilizar
-
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
-   cd seu-repositorio

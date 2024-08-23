@@ -1,0 +1,52 @@
+# Scroll-Synchronized Animation
+
+Este projeto exibe uma animação de sequência de frames em um `<canvas>` que é sincronizada com o scroll da página. Adicionalmente, elementos da página possuem animações de opacidade e transformação que reagem ao movimento do scroll, utilizando a biblioteca GSAP e seu plugin ScrollTrigger. O projeto também utiliza TailwindCSS para estilização e Lenis para suavização do scroll.
+
+## Funcionalidades
+
+- Exibição animada de 538 imagens em um `<canvas>`, sincronizada com o scroll.
+- Animação de elementos DOM, incluindo opacidade e transformação, baseada no scroll.
+- Suporte para redimensionamento da tela, ajustando dinamicamente a escala das imagens no `<canvas>`.
+- Estilização com TailwindCSS e suavização do scroll com Lenis.
+
+## Tecnologias Utilizadas
+
+- **HTML5**: Estrutura da página.
+- **CSS3**: Estilização dos elementos da página com TailwindCSS.
+- **JavaScript (ES6+)**: Lógica de animação e manipulação do DOM.
+- **GSAP**: Biblioteca para animações da web.
+- **ScrollTrigger**: Plugin do GSAP para animações baseadas em scroll.
+- **Lenis**: Biblioteca para suavização do scroll.
+
+## Estrutura do Projeto
+
+- **`index.html`**: Estrutura principal da página.
+- **`style.css`**: Estilização personalizada do projeto.
+- **`script.js`**: Implementa a lógica da animação e sincronização com o scroll.
+
+### HTML
+
+O HTML define a estrutura da página e inclui:
+
+- Um `<canvas>` para exibir a sequência de frames.
+- Elementos com classes `animate1`, `animate2`, `animate3` e `panelism` que possuem animações sincronizadas com o scroll.
+- Um painel lateral (`panel`) com botões e textos animados.
+
+### CSS
+
+O CSS utiliza TailwindCSS para estilização geral. Adicionalmente, estilos personalizados são definidos no arquivo `style.css`.
+
+### JavaScript
+
+O JavaScript gerencia:
+
+- O carregamento e exibição das imagens no `<canvas>`.
+- A sincronização das animações com o scroll da página usando GSAP e ScrollTrigger.
+- A suavização do scroll com Lenis.
+
+## Como Utilizar
+
+1. **Clone o repositório:**
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
+   cd seu-repositorio

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.11/dist/lenis.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <title>Doze</title>
+</head>
+<body>
+  <main class="w-full bg-zinc-900">
+    <section class="parent relative w-full h-[1000vh]">
+      <div class="w-full sticky top-0 left-0 h-screen overflow-x-hidden">
+        <canvas class="w-full h-screen" id="canva" aria-hidden="true"></canvas>
+        <div class="absolute animate1 z-[2] text-white bottom-10 w-1/2 left-10">
+          <h2 class="leading-20 font-[100] text-3xl uppercase">
+            &copy; 2024 doze std
+          </h2>
+          <p class="text-3xl uppercase">Shaping brands - crafting motion</p>
+        </div>
+        <div class="absolute animate2 flex z-[2] text-white bottom-10 w-1/2 right-10 text-right opacity-0">
+          <h2 class="leading-20 font-[100] text-6xl uppercase">
+            transforming visions
+          </h2>
+          <p class="text-xl w-1/2 uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Euas in possimus et ea amet voluptatibus nisi ullam?</p>
+        </div>
+
+        <div class="absolute animate3 z-[2] text-white top-1/2 left-1/2 -translate-x-1/2 text-center">
+          <h2 class="leading-20 font-[100] text-6xl uppercase">
+            transforming visions
+          </h2>
+          <p class="text-xl uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Euas in possimus et ea amet voluptatibus nisi ullam?</p>
+        </div>
+
+        <aside class="w-1/3 panel h-screen bg-white absolute right-0 top-0 z-[2] p-10 translate-x-full">
+          <h3 class="panelelem text-xl font-[100]">&copy; 2024 DOZE.Std</h3>
+          <p class="panelelem mt-10 text-xl">
+            Sculpting Digital
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta saepe omnis dicta, ut error nesciunt, pariatur consectetur reprehenderit possimus tempore sunt mollitia blanditiis quidem a.
+          </p>
+          <button class="panelelem border-[1px] px-3 py-2 border-[#555] font-[100] mt-6">Get Review</button>
+
+          <div class="panelelem absolute bottom-10">
+              <h4 class="text-xl">Innovating Design</h4>
+              <p class="text-sm mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure error ut voluptate!</p>
+              <button class="bg-black text-white px-7 text-sm m-4 py-4 font-[100] capitalize">experience</button>
+          </div>
+        </aside>
+
+        <div class="absolute z-[2] panelism text-white top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center text-6xl tracking-tighter opacity-0">
+          <p>&copy; Juliana Araújo <span class="line w-10 h-1 bg-white inline-block"></span> 2024</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="w-full bg-white py-32 px-10">
+      <h2 class="text-8xl tracking-tighter">&reg; Our Recent Work</h2>
+      <div class="w-1/2 headings p-3 flex flex-col gap-10 mt-32">
+        <h3 class="text-7xl">Zonrk Blerp</h3>
+        <h3 class="text-7xl">Lorem, ipsum dolor.</h3>
+        <h3 class="text-7xl">Lorem, ipsum.</h3>
+        <h3 class="text-7xl">Zonrk Blerp</h3>
+        <h3 class="text-7xl">Lorem, ipsum dolor.</h3>
+        <h3 class="text-7xl">Lorem, ipsum.</h3>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/lenis@1.1.11/dist/lenis.min.js"></script> 
+  <script src="./script.js"></script>
+
+  <script>
+    const lenis = new Lenis()
+
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+
+    requestAnimationFrame(raf)
+  </script>
+</body>
+</html>

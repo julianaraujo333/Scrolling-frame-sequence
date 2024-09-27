@@ -23,3 +23,6 @@ Este projeto exibe uma animação de sequência de frames em um `<canvas>` que �
 - **`index.html`**: Estrutura principal da página.
 - **`style.css`**: Estilização personalizada do projeto.
 - **`script.js`**: Implementa a lógica da animação e sincronização com o scroll.
+
+## Confira o projeto!
+[Deploy](https://main--scrolling-frame-sequence.netlify.app/) 
